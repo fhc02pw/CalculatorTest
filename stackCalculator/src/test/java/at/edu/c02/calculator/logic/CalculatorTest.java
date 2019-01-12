@@ -44,6 +44,18 @@ public class CalculatorTest {
 		assertEquals(6, result, 0);
 
 	}
+	
+	@Test
+	public void testSimpleModOperation() throws Exception {
+
+		Calculator calc = new CalculatorImpl(new DefaultOperationFactory());
+		calc.push(20);
+		calc.push(7);
+		double result = calc.perform(Operation.mod);
+
+		assertEquals(6, result, 0);
+
+	}
 
 	@Test
 	public void testSimpleDivOperation() throws Exception {
