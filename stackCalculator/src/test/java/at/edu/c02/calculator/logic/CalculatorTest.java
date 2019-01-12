@@ -24,12 +24,12 @@ public class CalculatorTest {
 		Calculator calc = new CalculatorImpl(new DefaultOperationFactory());
 
 		// execute
-		calc.push(2.0);
-		calc.push(3);
+		calc.push(3.0);
+		calc.push(4);
 		double result = calc.perform(Operation.add);
 
 		// verify
-		assertEquals(5, result, 0);
+		assertEquals(7, result, 0);
 
 	}
 
