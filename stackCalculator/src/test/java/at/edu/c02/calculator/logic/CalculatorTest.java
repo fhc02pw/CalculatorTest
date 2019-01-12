@@ -55,6 +55,8 @@ public class CalculatorTest {
 
 		assertEquals(6, result, 0);
 
+		//corina
+		
 	}
 
 	@Test
