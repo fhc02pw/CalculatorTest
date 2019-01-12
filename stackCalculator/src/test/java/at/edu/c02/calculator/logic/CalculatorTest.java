@@ -25,11 +25,11 @@ public class CalculatorTest {
 
 		// execute
 		calc.push(3.0);
-		calc.push(3);
+		calc.push(4);
 		double result = calc.perform(Operation.add);
 
 		// verify
-		assertEquals(6, result, 0);
+		assertEquals(7, result, 0);
 
 	}
 
