@@ -7,6 +7,7 @@ import org.junit.Test;
 import at.edu.c02.calculator.CalculatorException;
 import at.edu.c02.calculator.MathOperation;
 import at.edu.c02.calculator.logic.operations.Add;
+import at.edu.c02.calculator.logic.operations.Mod;
 
 public class OperationTest {
 
@@ -21,6 +22,19 @@ public class OperationTest {
 		
 		//verify
 		assertEquals(78, result, 0.0001);
+	}
+	
+	@Test
+	public void testMod() throws CalculatorException {
+		
+		// setup
+		MathOperation mod = new Mod();
+		
+		//execute
+		double result = mod.calculate(20, 7);
+		
+		//verify
+		assertEquals(6, result, 0.0001);
 	}
 
 
