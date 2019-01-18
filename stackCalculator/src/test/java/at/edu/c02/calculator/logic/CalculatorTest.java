@@ -97,6 +97,23 @@ public class CalculatorTest {
 			// e.getCause()
 		}
 	}
+	
+	public void testMod() throws Exception {
+
+		// Setup
+		Calculator calc = new CalculatorImpl(new DefaultOperationFactory());
+		try {
+			calc.push(3);
+			calc.push(2);
+			calc.perform(Operation.mod);
+
+			fail("Exception expected");
+
+		} catch (CalculatorException e) {
+			assertEquals("Division by zero", e.getMessage());
+			
+		}
+	}
 
 	@Test
 	public void testMockFactory() throws CalculatorException {
