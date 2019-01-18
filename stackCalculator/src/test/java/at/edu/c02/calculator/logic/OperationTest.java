@@ -25,7 +25,8 @@ public class OperationTest {
 		
 	}
 	
-public void Mod() throws CalculatorException {
+
+public void testMod() throws CalculatorException {
 		
 		//setup
 		MathOperation mod = new Mod();
